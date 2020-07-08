@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-08T15:07:31 EEST" name="Default suite" finished-at="2020-07-08T15:07:49 EEST" duration-ms="17168">
+    <groups>
+    </groups>
+    <test started-at="2020-07-08T15:07:31 EEST" name="Default test" finished-at="2020-07-08T15:07:49 EEST" duration-ms="17168">
+      <class name="QA.Project.Home">
+        <test-method is-config="true" signature="initializeDriverData()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:31 EEST" name="initializeDriverData" finished-at="2020-07-08T15:07:44 EEST" duration-ms="12994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverData -->
+        <test-method signature="TC1_HomePageTitle()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:44 EEST" name="TC1_HomePageTitle" finished-at="2020-07-08T15:07:45 EEST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_HomePageTitle -->
+        <test-method signature="TC2_HomePageURL()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC2_HomePageURL" finished-at="2020-07-08T15:07:45 EEST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_HomePageURL -->
+        <test-method signature="TC3_HomeSearchField()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC3_HomeSearchField" finished-at="2020-07-08T15:07:45 EEST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_HomeSearchField -->
+        <test-method signature="TC4_HomeKeyboardEnabled()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC4_HomeKeyboardEnabled" finished-at="2020-07-08T15:07:45 EEST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_HomeKeyboardEnabled -->
+        <test-method signature="TC5_HomeBelowText1()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC5_HomeBelowText1" finished-at="2020-07-08T15:07:45 EEST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_HomeBelowText1 -->
+        <test-method signature="TC6_HomeBelowText2()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC6_HomeBelowText2" finished-at="2020-07-08T15:07:45 EEST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6_HomeBelowText2 -->
+        <test-method signature="TC7_HomeLoginClick()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC7_HomeLoginClick" finished-at="2020-07-08T15:07:48 EEST" duration-ms="2891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7_HomeLoginClick -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:48 EEST" name="closeBrowser" finished-at="2020-07-08T15:07:49 EEST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- QA.Project.Home -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
