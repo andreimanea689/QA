@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="QA.Project.Password">
+      <class name="QA.Project.Home">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="TC4_insertValidPass"/>
+          <include name="TC2_HomePageURL"/>
+          <include name="TC6_HomeBelowText2"/>
+          <include name="TC5_HomeBelowText1"/>
+          <include name="TC4_HomeKeyboardEnabled"/>
+          <include name="TC7_HomeLoginClick"/>
+          <include name="TC3_HomeSearchField"/>
           <include name="initializeDriverData"/>
+          <include name="closeBrowser"/>
+          <include name="TC1_HomePageTitle"/>
         </methods>
-      </class> <!-- QA.Project.Password -->
+      </class> <!-- QA.Project.Home -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

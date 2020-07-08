@@ -17,7 +17,7 @@ public class Base {
 		
 		// Create new properties object, an input stream object and set the path to the properties file
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/home/andrei/eclipse-workspace/Project/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream("/home/andrei/git/QA/Project/src/main/java/resources/data.properties");
 		
 		// Load the properties file
 		prop.load(fis);

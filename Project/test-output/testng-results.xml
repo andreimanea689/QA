@@ -1,49 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-08T15:07:31 EEST" name="Default suite" finished-at="2020-07-08T15:07:49 EEST" duration-ms="17168">
+  <suite started-at="2020-07-08T16:09:55 EEST" name="Suite" finished-at="2020-07-08T16:11:24 EEST" duration-ms="89320">
     <groups>
     </groups>
-    <test started-at="2020-07-08T15:07:31 EEST" name="Default test" finished-at="2020-07-08T15:07:49 EEST" duration-ms="17168">
-      <class name="QA.Project.Home">
-        <test-method is-config="true" signature="initializeDriverData()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:31 EEST" name="initializeDriverData" finished-at="2020-07-08T15:07:44 EEST" duration-ms="12994" status="PASS">
+    <test started-at="2020-07-08T16:09:55 EEST" name="Test" finished-at="2020-07-08T16:11:24 EEST" duration-ms="89320">
+      <class name="QA.Project.Password">
+        <test-method is-config="true" signature="initializeDriverData()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:10:43 EEST" name="initializeDriverData" finished-at="2020-07-08T16:11:06 EEST" duration-ms="22487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverData -->
-        <test-method signature="TC1_HomePageTitle()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:44 EEST" name="TC1_HomePageTitle" finished-at="2020-07-08T15:07:45 EEST" duration-ms="89" status="PASS">
+        <test-method signature="TC1_insertPassDisplayed()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:11:13 EEST" name="TC1_insertPassDisplayed" finished-at="2020-07-08T16:11:13 EEST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_insertPassDisplayed -->
+        <test-method signature="TC2_forgotPassDisplayed()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:11:13 EEST" name="TC2_forgotPassDisplayed" finished-at="2020-07-08T16:11:13 EEST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_forgotPassDisplayed -->
+        <test-method signature="TC3_insertInvalidPass()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:11:13 EEST" name="TC3_insertInvalidPass" finished-at="2020-07-08T16:11:14 EEST" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_insertInvalidPass -->
+        <test-method signature="TC4_insertValidPass()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:11:14 EEST" name="TC4_insertValidPass" finished-at="2020-07-08T16:11:19 EEST" duration-ms="4634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_insertValidPass -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QA.Project.Password@d83da2e]" started-at="2020-07-08T16:11:24 EEST" name="closeBrowser" finished-at="2020-07-08T16:11:24 EEST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- QA.Project.Password -->
+      <class name="QA.Project.Email">
+        <test-method is-config="true" signature="initializeDriverData()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:09:55 EEST" name="initializeDriverData" finished-at="2020-07-08T16:10:31 EEST" duration-ms="35840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverData -->
+        <test-method signature="TC2_EmailPageURL()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:11:08 EEST" name="TC2_EmailPageURL" finished-at="2020-07-08T16:11:08 EEST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_EmailPageURL -->
+        <test-method signature="TC3_insertEmailDisplayed()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:11:08 EEST" name="TC3_insertEmailDisplayed" finished-at="2020-07-08T16:11:08 EEST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_insertEmailDisplayed -->
+        <test-method signature="TC4_insertInvalidEmail()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:11:08 EEST" name="TC4_insertInvalidEmail" finished-at="2020-07-08T16:11:10 EEST" duration-ms="1357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_insertInvalidEmail -->
+        <test-method signature="TC5_insertValidEmail()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:11:10 EEST" name="TC5_insertValidEmail" finished-at="2020-07-08T16:11:13 EEST" duration-ms="2830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_insertValidEmail -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QA.Project.Email@fdefd3f]" started-at="2020-07-08T16:11:22 EEST" name="closeBrowser" finished-at="2020-07-08T16:11:23 EEST" duration-ms="1271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- QA.Project.Email -->
+      <class name="QA.Project.Home">
+        <test-method is-config="true" signature="initializeDriverData()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:10:31 EEST" name="initializeDriverData" finished-at="2020-07-08T16:10:43 EEST" duration-ms="12763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverData -->
+        <test-method signature="TC1_HomePageTitle()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC1_HomePageTitle" finished-at="2020-07-08T16:11:19 EEST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1_HomePageTitle -->
-        <test-method signature="TC2_HomePageURL()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC2_HomePageURL" finished-at="2020-07-08T15:07:45 EEST" duration-ms="36" status="PASS">
+        <test-method signature="TC2_HomePageURL()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC2_HomePageURL" finished-at="2020-07-08T16:11:19 EEST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC2_HomePageURL -->
-        <test-method signature="TC3_HomeSearchField()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC3_HomeSearchField" finished-at="2020-07-08T15:07:45 EEST" duration-ms="275" status="PASS">
+        <test-method signature="TC3_HomeSearchField()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC3_HomeSearchField" finished-at="2020-07-08T16:11:19 EEST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC3_HomeSearchField -->
-        <test-method signature="TC4_HomeKeyboardEnabled()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC4_HomeKeyboardEnabled" finished-at="2020-07-08T15:07:45 EEST" duration-ms="65" status="PASS">
+        <test-method signature="TC4_HomeKeyboardEnabled()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC4_HomeKeyboardEnabled" finished-at="2020-07-08T16:11:19 EEST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC4_HomeKeyboardEnabled -->
-        <test-method signature="TC5_HomeBelowText1()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC5_HomeBelowText1" finished-at="2020-07-08T15:07:45 EEST" duration-ms="147" status="PASS">
+        <test-method signature="TC5_HomeBelowText1()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC5_HomeBelowText1" finished-at="2020-07-08T16:11:19 EEST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC5_HomeBelowText1 -->
-        <test-method signature="TC6_HomeBelowText2()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC6_HomeBelowText2" finished-at="2020-07-08T15:07:45 EEST" duration-ms="133" status="PASS">
+        <test-method signature="TC6_HomeBelowText2()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC6_HomeBelowText2" finished-at="2020-07-08T16:11:19 EEST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC6_HomeBelowText2 -->
-        <test-method signature="TC7_HomeLoginClick()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:45 EEST" name="TC7_HomeLoginClick" finished-at="2020-07-08T15:07:48 EEST" duration-ms="2891" status="PASS">
+        <test-method signature="TC7_HomeLoginClick()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:19 EEST" name="TC7_HomeLoginClick" finished-at="2020-07-08T16:11:22 EEST" duration-ms="2564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC7_HomeLoginClick -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QA.Project.Home@5db45159]" started-at="2020-07-08T15:07:48 EEST" name="closeBrowser" finished-at="2020-07-08T15:07:49 EEST" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QA.Project.Home@a4102b8]" started-at="2020-07-08T16:11:23 EEST" name="closeBrowser" finished-at="2020-07-08T16:11:24 EEST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- QA.Project.Home -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
