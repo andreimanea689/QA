@@ -1,15 +1,15 @@
 package pageobject;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import pageobjects.EmailPage;
 import resources.BaseConfiguration;
@@ -49,14 +49,14 @@ public class TestEmailPage extends BaseConfiguration{
 		String expectedEmailURL = prop.getProperty("EmailPageURL");
 		String actualEmailURL = driver.getCurrentUrl();
 		
-		AssertJUnit.assertEquals(actualEmailURL, expectedEmailURL);		
+		Assert.assertEquals(actualEmailURL, expectedEmailURL);		
 	}
 	
 	@Test
 	public void TC3_insertEmailDisplayed() {
 		
 		EmailPage emailPg = new EmailPage(driver);
-		AssertJUnit.assertTrue(emailPg.getEmail().isDisplayed());
+		Assert.assertTrue(emailPg.getEmail().isDisplayed());
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class TestEmailPage extends BaseConfiguration{
 		emailPg.getEmail().sendKeys(invalidEmail);
 		emailPg.getEmailNextStep().click();
 		
-		AssertJUnit.assertTrue(emailPg.getInvalidEmailText().isDisplayed());
+		Assert.assertTrue(emailPg.getInvalidEmailText().isDisplayed());
 				
 	}
 	
@@ -91,7 +91,7 @@ public class TestEmailPage extends BaseConfiguration{
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//*[@id='headingText']/span"), expectedValidEmailText));		
 		
 		String actualValidEmailText = emailPg.getValidEmailText().getText();
-		AssertJUnit.assertEquals(actualValidEmailText, expectedValidEmailText);
+		Assert.assertEquals(actualValidEmailText, expectedValidEmailText);
 	}
 	
 	@AfterTest

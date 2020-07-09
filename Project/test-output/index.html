@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestEmailPage" class="method navigator-link" hash-for-method="TC4_insertInvalidEmail">TC4_insertInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestEmailPage" class="method navigator-link" hash-for-method="TC5_insertValidEmail">TC5_insertValidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,77 +121,67 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC1_HomePageTitle">TC1_HomePageTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC1_HomePageTitle">TC1_HomePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Password" class="method navigator-link" hash-for-method="TC1_insertPassDisplayed">TC1_insertPassDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestPasswordPage" class="method navigator-link" hash-for-method="TC1_insertPassDisplayed">TC1_insertPassDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Email" class="method navigator-link" hash-for-method="TC2_EmailPageURL">TC2_EmailPageURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestEmailPage" class="method navigator-link" hash-for-method="TC2_EmailPageURL">TC2_EmailPageURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC2_HomePageURL">TC2_HomePageURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC2_HomePageURL">TC2_HomePageURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Password" class="method navigator-link" hash-for-method="TC2_forgotPassDisplayed">TC2_forgotPassDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestPasswordPage" class="method navigator-link" hash-for-method="TC2_forgotPassDisplayed">TC2_forgotPassDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC3_HomeSearchField">TC3_HomeSearchField</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC3_HomeSearchField">TC3_HomeSearchField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Email" class="method navigator-link" hash-for-method="TC3_insertEmailDisplayed">TC3_insertEmailDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestEmailPage" class="method navigator-link" hash-for-method="TC3_insertEmailDisplayed">TC3_insertEmailDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Password" class="method navigator-link" hash-for-method="TC3_insertInvalidPass">TC3_insertInvalidPass</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestPasswordPage" class="method navigator-link" hash-for-method="TC3_insertInvalidPass">TC3_insertInvalidPass</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC4_HomeKeyboardEnabled">TC4_HomeKeyboardEnabled</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC4_HomeKeyboardEnabled">TC4_HomeKeyboardEnabled</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Email" class="method navigator-link" hash-for-method="TC4_insertInvalidEmail">TC4_insertInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestPasswordPage" class="method navigator-link" hash-for-method="TC4_insertValidPass">TC4_insertValidPass</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Password" class="method navigator-link" hash-for-method="TC4_insertValidPass">TC4_insertValidPass</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC5_HomeBelowText1">TC5_HomeBelowText1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC5_HomeBelowText1">TC5_HomeBelowText1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC6_HomeBelowText2">TC6_HomeBelowText2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Email" class="method navigator-link" hash-for-method="TC5_insertValidEmail">TC5_insertValidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC6_HomeBelowText2">TC6_HomeBelowText2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="QA.Project.Home" class="method navigator-link" hash-for-method="TC7_HomeLoginClick">TC7_HomeLoginClick</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageobject.TestHomePage" class="method navigator-link" hash-for-method="TC7_HomeLoginClick">TC7_HomeLoginClick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -187,67 +196,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">QA.Project.Password</span>
+              <img src="failed.png"/>
+              <span class="class-name">pageobject.TestEmailPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC1_insertPassDisplayed">
-                  </a> <!-- TC1_insertPassDisplayed -->
-                  <span class="method-name">TC1_insertPassDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC2_forgotPassDisplayed">
-                  </a> <!-- TC2_forgotPassDisplayed -->
-                  <span class="method-name">TC2_forgotPassDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC3_insertInvalidPass">
-                  </a> <!-- TC3_insertInvalidPass -->
-                  <span class="method-name">TC3_insertInvalidPass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC4_insertValidPass">
-                  </a> <!-- TC4_insertValidPass -->
-                  <span class="method-name">TC4_insertValidPass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">QA.Project.Email</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC2_EmailPageURL">
-                  </a> <!-- TC2_EmailPageURL -->
-                  <span class="method-name">TC2_EmailPageURL</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC3_insertEmailDisplayed">
-                  </a> <!-- TC3_insertEmailDisplayed -->
-                  <span class="method-name">TC3_insertEmailDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC4_insertInvalidEmail">
                   </a> <!-- TC4_insertInvalidEmail -->
                   <span class="method-name">TC4_insertInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[class*=&apos;RveJvd&apos;]&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;andrei-Aspire-5738&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-62-generic&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.61 (94f915a8d7c40..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:38549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a95c8ace7d06b6d093cf4316c9951f4
+*** Element info: {Using=css selector, value=span[class*=&apos;RveJvd&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.EmailPage.getEmailNextStep(EmailPage.java:34)
+	at pageobject.TestEmailPage.TC4_insertInvalidEmail(TestEmailPage.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -255,14 +238,38 @@
                   <a name="TC5_insertValidEmail">
                   </a> <!-- TC5_insertValidEmail -->
                   <span class="method-name">TC5_insertValidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[class*=&apos;RveJvd&apos;]&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;andrei-Aspire-5738&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-62-generic&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.61 (94f915a8d7c40..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:38549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a95c8ace7d06b6d093cf4316c9951f4
+*** Element info: {Using=css selector, value=span[class*=&apos;RveJvd&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.EmailPage.getEmailNextStep(EmailPage.java:34)
+	at pageobject.TestEmailPage.TC5_insertValidEmail(TestEmailPage.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">QA.Project.Home</span>
+              <span class="class-name">pageobject.TestHomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -316,6 +323,64 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pageobject.TestEmailPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC2_EmailPageURL">
+                  </a> <!-- TC2_EmailPageURL -->
+                  <span class="method-name">TC2_EmailPageURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3_insertEmailDisplayed">
+                  </a> <!-- TC3_insertEmailDisplayed -->
+                  <span class="method-name">TC3_insertEmailDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pageobject.TestPasswordPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC1_insertPassDisplayed">
+                  </a> <!-- TC1_insertPassDisplayed -->
+                  <span class="method-name">TC1_insertPassDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC2_forgotPassDisplayed">
+                  </a> <!-- TC2_forgotPassDisplayed -->
+                  <span class="method-name">TC2_forgotPassDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3_insertInvalidPass">
+                  </a> <!-- TC3_insertInvalidPass -->
+                  <span class="method-name">TC3_insertInvalidPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC4_insertValidPass">
+                  </a> <!-- TC4_insertValidPass -->
+                  <span class="method-name">TC4_insertValidPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -328,9 +393,9 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;QA.Project.Email&quot;/&gt;
-      &lt;class name=&quot;QA.Project.Password&quot;/&gt;
-      &lt;class name=&quot;QA.Project.Home&quot;/&gt;
+      &lt;class name=&quot;pageobject.TestEmailPage&quot;/&gt;
+      &lt;class name=&quot;pageobject.TestHomePage&quot;/&gt;
+      &lt;class name=&quot;pageobject.TestPasswordPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -372,70 +437,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC4_insertValidPass')
-data.setCell(0, 2, 'QA.Project.Password')
-data.setCell(0, 3, 4634);
+data.setCell(0, 1, 'TC4_insertInvalidEmail')
+data.setCell(0, 2, 'pageobject.TestEmailPage')
+data.setCell(0, 3, 10787);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC5_insertValidEmail')
-data.setCell(1, 2, 'QA.Project.Email')
-data.setCell(1, 3, 2830);
+data.setCell(1, 2, 'pageobject.TestEmailPage')
+data.setCell(1, 3, 10761);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC7_HomeLoginClick')
-data.setCell(2, 2, 'QA.Project.Home')
-data.setCell(2, 3, 2564);
+data.setCell(2, 1, 'TC4_insertValidPass')
+data.setCell(2, 2, 'pageobject.TestPasswordPage')
+data.setCell(2, 3, 3592);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC4_insertInvalidEmail')
-data.setCell(3, 2, 'QA.Project.Email')
-data.setCell(3, 3, 1357);
+data.setCell(3, 1, 'TC7_HomeLoginClick')
+data.setCell(3, 2, 'pageobject.TestHomePage')
+data.setCell(3, 3, 2498);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC3_insertInvalidPass')
-data.setCell(4, 2, 'QA.Project.Password')
-data.setCell(4, 3, 1053);
+data.setCell(4, 2, 'pageobject.TestPasswordPage')
+data.setCell(4, 3, 963);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC3_insertEmailDisplayed')
-data.setCell(5, 2, 'QA.Project.Email')
-data.setCell(5, 3, 480);
+data.setCell(5, 2, 'pageobject.TestEmailPage')
+data.setCell(5, 3, 312);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC2_forgotPassDisplayed')
-data.setCell(6, 2, 'QA.Project.Password')
-data.setCell(6, 3, 214);
+data.setCell(6, 1, 'TC1_insertPassDisplayed')
+data.setCell(6, 2, 'pageobject.TestPasswordPage')
+data.setCell(6, 3, 185);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC2_EmailPageURL')
-data.setCell(7, 2, 'QA.Project.Email')
-data.setCell(7, 3, 194);
+data.setCell(7, 1, 'TC2_forgotPassDisplayed')
+data.setCell(7, 2, 'pageobject.TestPasswordPage')
+data.setCell(7, 3, 184);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC3_HomeSearchField')
-data.setCell(8, 2, 'QA.Project.Home')
-data.setCell(8, 3, 164);
+data.setCell(8, 1, 'TC6_HomeBelowText2')
+data.setCell(8, 2, 'pageobject.TestHomePage')
+data.setCell(8, 3, 152);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC5_HomeBelowText1')
-data.setCell(9, 2, 'QA.Project.Home')
-data.setCell(9, 3, 143);
+data.setCell(9, 1, 'TC3_HomeSearchField')
+data.setCell(9, 2, 'pageobject.TestHomePage')
+data.setCell(9, 3, 149);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC1_insertPassDisplayed')
-data.setCell(10, 2, 'QA.Project.Password')
-data.setCell(10, 3, 137);
+data.setCell(10, 1, 'TC5_HomeBelowText1')
+data.setCell(10, 2, 'pageobject.TestHomePage')
+data.setCell(10, 3, 119);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TC4_HomeKeyboardEnabled')
-data.setCell(11, 2, 'QA.Project.Home')
-data.setCell(11, 3, 81);
+data.setCell(11, 2, 'pageobject.TestHomePage')
+data.setCell(11, 3, 55);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC6_HomeBelowText2')
-data.setCell(12, 2, 'QA.Project.Home')
-data.setCell(12, 3, 75);
+data.setCell(12, 1, 'TC2_EmailPageURL')
+data.setCell(12, 2, 'pageobject.TestEmailPage')
+data.setCell(12, 3, 39);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'TC1_HomePageTitle')
-data.setCell(13, 2, 'QA.Project.Home')
-data.setCell(13, 3, 36);
+data.setCell(13, 2, 'pageobject.TestHomePage')
+data.setCell(13, 3, 15);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'TC2_HomePageURL')
-data.setCell(14, 2, 'QA.Project.Home')
-data.setCell(14, 3, 33);
+data.setCell(14, 2, 'pageobject.TestHomePage')
+data.setCell(14, 3, 14);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -461,114 +526,118 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Email</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestEmailPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriverData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Home</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriverData</span>
-                <span class="method-start">35859 ms</span>
+                <span class="method-start">9426 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Password</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriverData</span>
-                <span class="method-start">48623 ms</span>
+                <span class="method-start">15568 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Email</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestEmailPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC2_EmailPageURL</span>
-                <span class="method-start">72875 ms</span>
+                <span class="method-start">25545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC3_insertEmailDisplayed</span>
-                <span class="method-start">73131 ms</span>
+                <span class="method-start">25597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC4_insertInvalidEmail</span>
-                <span class="method-start">73634 ms</span>
+                <span class="method-start">25913 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC5_insertValidEmail</span>
-                <span class="method-start">75009 ms</span>
+                <span class="method-start">36709 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Password</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC1_insertPassDisplayed</span>
-                <span class="method-start">77878 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC2_forgotPassDisplayed</span>
-                <span class="method-start">78018 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC3_insertInvalidPass</span>
-                <span class="method-start">78239 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC4_insertValidPass</span>
-                <span class="method-start">79298 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Home</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestHomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC1_HomePageTitle</span>
-                <span class="method-start">83948 ms</span>
+                <span class="method-start">47480 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC2_HomePageURL</span>
-                <span class="method-start">83987 ms</span>
+                <span class="method-start">47498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC3_HomeSearchField</span>
-                <span class="method-start">84031 ms</span>
+                <span class="method-start">47515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC4_HomeKeyboardEnabled</span>
-                <span class="method-start">84200 ms</span>
+                <span class="method-start">47680 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC5_HomeBelowText1</span>
-                <span class="method-start">84284 ms</span>
+                <span class="method-start">47746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC6_HomeBelowText2</span>
-                <span class="method-start">84431 ms</span>
+                <span class="method-start">47867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC7_HomeLoginClick</span>
-                <span class="method-start">84509 ms</span>
+                <span class="method-start">48022 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Email</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestPasswordPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC1_insertPassDisplayed</span>
+                <span class="method-start">50532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC2_forgotPassDisplayed</span>
+                <span class="method-start">50727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC3_insertInvalidPass</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC4_insertValidPass</span>
+                <span class="method-start">51887 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageobject.TestEmailPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">87083 ms</span>
+                <span class="method-start">55482 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Home</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">88354 ms</span>
+                <span class="method-start">55828 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">QA.Project.Password</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageobject.TestPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">88819 ms</span>
+                <span class="method-start">56115 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
