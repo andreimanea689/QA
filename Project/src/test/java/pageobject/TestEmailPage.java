@@ -33,15 +33,16 @@ public class TestEmailPage extends BaseConfiguration{
 		
 		}
 	
-	/*@Test
+	@Test
 	public void TC1_EmailPageTitle(){
 		
 		String expectedEmailTitle = prop.getProperty("EmailPageTitle");
 		String actualEmailTitle = driver.getTitle();
 		
+		
 		Assert.assertEquals(actualEmailTitle, expectedEmailTitle);
 		
-	} */
+	}
 	
 	@Test
 	public void TC2_EmailPageURL() {

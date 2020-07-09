@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseConfiguration {
 	
@@ -29,7 +30,9 @@ public class BaseConfiguration {
 			
 			// Chrome Browser initialisation
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-dev-shm-usage");
+			driver = new ChromeDriver(options);
 		}
 		
 		else {
