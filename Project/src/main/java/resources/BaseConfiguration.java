@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Base {
+public class BaseConfiguration {
 	
 	public WebDriver driver;
 	public Properties prop;
@@ -22,6 +22,7 @@ public class Base {
 		// Load the properties file
 		prop.load(fis);
 		String browserType = prop.getProperty("browser");
+		
 		//String URL = prop.getProperty("URL");
 		
 		if (browserType.equals("chrome")){
@@ -29,11 +30,9 @@ public class Base {
 			// Chrome Browser initialisation
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			driver = new ChromeDriver();
-			
 		}
 		
 		else {
-			
 			System.out.println("Only Chrome browser can be set");
 			
 		}

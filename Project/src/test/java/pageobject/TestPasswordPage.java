@@ -1,7 +1,10 @@
-package QA.Project;
+package pageobject;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
+import pageobjects.PasswordPage;
+
+import org.testng.Assert;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -9,10 +12,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import pageObjects.PasswordPage;
-import resources.Base;
 
-public class Password extends Base{
+import resources.BaseConfiguration;
+
+public class TestPasswordPage extends BaseConfiguration{
 	
 	public WebDriver driver;
 	
@@ -23,9 +26,9 @@ public class Password extends Base{
 		driver = InitialiseDriver();
 		driver.get(prop.getProperty("URL"));
 		
-		PasswordPage passPage = new PasswordPage(driver);
+		PasswordPage passPage= new PasswordPage(driver);
 		passPage.getLoginClick().click();
-		
+				
 		String validEmail = prop.getProperty("ValidEmail");		
 		
 		passPage.getEmail().sendKeys(validEmail);
@@ -48,7 +51,7 @@ public class Password extends Base{
 	public void TC2_forgotPassDisplayed() {
 		
 		PasswordPage passPage = new PasswordPage(driver);
-		AssertJUnit.assertTrue(passPage.getForgotPass().isDisplayed());
+		Assert.assertTrue(passPage.getForgotPass().isDisplayed());
 	}
 
 	@Test
@@ -60,7 +63,7 @@ public class Password extends Base{
 		passPage.getPassword().sendKeys(invalidPass);
 		passPage.getPassNextStep().click();
 		
-		AssertJUnit.assertTrue(passPage.getInvalidText().isDisplayed());
+		Assert.assertTrue(passPage.getInvalidText().isDisplayed());
 				
 	}
 	
@@ -69,18 +72,16 @@ public class Password extends Base{
 		
 		
 		String validPass = prop.getProperty("ValidPass");
-		//String expectedValidEmailText = prop.getProperty("ValidEmailText");
-		
+				
 		PasswordPage passPage = new PasswordPage(driver);
 		passPage.getPassword().clear();
 		passPage.getPassword().sendKeys(validPass);
 		passPage.getPassNextStep().click();
 		
 		String expectedHomeTitle = prop.getProperty("HomeTitle");
-		//String actualHomeTitle = driver.getTitle();
+	
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.titleIs(expectedHomeTitle));
-		//Assert.assertEquals(actualHomeTitle, expectedHomeTitle);
 		
 	}
 	

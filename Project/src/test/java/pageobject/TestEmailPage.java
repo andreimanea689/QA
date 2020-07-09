@@ -1,22 +1,20 @@
-package QA.Project;
+package pageobject;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+import pageobjects.EmailPage;
+import resources.BaseConfiguration;
 
-import pageObjects.EmailPage;
-import resources.Base;
-
-public class Email extends Base{
+public class TestEmailPage extends BaseConfiguration{
 	
 	public WebDriver driver;
 	
@@ -28,6 +26,7 @@ public class Email extends Base{
 		driver.get(prop.getProperty("URL"));
 		
 		EmailPage emailPg = new EmailPage(driver);
+		
 		emailPg.getLoginClick().click();
 		
 		return driver;		
@@ -86,10 +85,9 @@ public class Email extends Base{
 		emailPg.getEmailNextStep().click();
 		
 		//Thread.sleep(3000);
-		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
 		//wait.until(ExpectedConditions.textToBePresentInElement(emailPg.getValidEmailText(), expectedValidEmailText));
 		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//*[@id='headingText']/span"), expectedValidEmailText));		
 		
 		String actualValidEmailText = emailPg.getValidEmailText().getText();
